@@ -2,7 +2,6 @@ services:
   - type: web
     name: elabftw
     env: docker
-    buildCommand: ./build.sh
     repo: https://github.com/ktcrtr/elabftw
     plan: free
     region: oregon
