@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: elabftw
+    env: docker
+    repo: https://github.com/ktcrtr/elabftw
+    plan: free
+    region: oregon
+    branch: master
+    dockerContext: ./docker
+    dockerfilePath: ./docker/Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: "prod"
+      - key: ELAB_PORT
+        value: "8080"
