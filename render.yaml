@@ -3,7 +3,7 @@ services:
     name: elabftw
     env: docker
     buildCommand: ./build.sh
-    repo: https://github.com/YOUR_GITHUB_USERNAME/elabftw
+    repo: https://github.com/ktcrtr/elabftw
     plan: free
     region: oregon
     branch: master
@@ -14,13 +14,3 @@ services:
         value: "prod"
       - key: ELAB_PORT
         value: "8080"
-      - key: DB_HOST
-        value: "your-db-host.render.com"
-      - key: DB_PORT
-        value: "5432"
-      - key: DB_NAME
-        value: "your-db-name"
-      - key: DB_USER
-        value: "your-db-user"
-      - key: DB_PASSWORD
-        value: "your-db-password"
